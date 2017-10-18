@@ -49,8 +49,6 @@ public class PageObjects {
     private WebElement reasonTxtField;
     @FindBy(id = "go_add_expense")
     private WebElement addExpenseButton;
-    @FindBy(xpath = "/html/body/div/table/tbody/tr[1]/td[1]")
-    private WebElement latestCategoryAdded;
     @FindBy(xpath = "/html/body/div/table/tbody/tr[1]/td[2]")
     private WebElement latestExpenseCategory;
     @FindBy(xpath = "/html/body/div/table/tbody/tr[1]/td[4]")
@@ -136,15 +134,6 @@ public class PageObjects {
      */
     public String getUsername() {
         return editAccountButton.getText();
-    }
-
-    /**
-     * returns the latestCategoryAdded by the user
-     *
-     * @return latest Category Added
-     */
-    public String getLatestCategoryAdded() {
-        return latestCategoryAdded.getText();
     }
 
     /**
